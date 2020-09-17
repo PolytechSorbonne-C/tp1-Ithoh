@@ -26,8 +26,7 @@ int puissance2(int x, int k)
     while (k > 1)
     {
         if (k % 2 == 0)
-        {
-            
+        {    
             k = k / 2;
             resultat *= resultat;
         }
@@ -38,7 +37,6 @@ int puissance2(int x, int k)
             temp = temp * resultat;
             resultat *= resultat;
         }
-    }
-    
+    }   
     return printf("Voici le resultat : %d\n", resultat*temp);
 }
