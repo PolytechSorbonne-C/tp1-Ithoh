@@ -1,3 +1,12 @@
+/*********************************************************************************
+*                               Author: Léo Delas                                *
+*          File Name: /home/leo/Documents/Langage_C/tp1-Ithoh/puiss2.c           *
+*                   Creation Date: September 17, 2020 07:39 PM                   *
+*                   Last Updated: September 17, 2020 08:37 PM                    *
+*                               Source Language: c                               *
+*          Repository: https://github.com/PolytechSorbonne-C/tp1-Ithoh           *
+*********************************************************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 

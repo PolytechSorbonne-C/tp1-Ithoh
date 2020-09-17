@@ -1,3 +1,12 @@
+/*********************************************************************************
+*                               Author: Léo Delas                                *
+*            File Name: /home/leo/Documents/Langage_C/tp1-Ithoh/pi.c             *
+*                   Creation Date: September 17, 2020 03:07 PM                   *
+*                   Last Updated: September 17, 2020 08:38 PM                    *
+*                              Source Language: cpp                              *
+*          Repository: https://github.com/PolytechSorbonne-C/tp1-Ithoh           *
+*********************************************************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
