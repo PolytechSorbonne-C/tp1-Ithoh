@@ -17,35 +17,35 @@ int main(int argc, char const *argv[])
 
 int puissance2(int x, int k)
 {
+    int resultat;
     int temp;
-    int temp2;
 
-    temp = x;
-    temp2 = x;
-    printf("k est egal : %d\n", k);
-    printf("temp est egal : %d\n\n",temp);
+    resultat = x;
+    temp = 1;
+
     while (k > 1)
     {
         if (k % 2 == 0)
         {
-            printf("k est egal : %d\n", k);
-
+            
             k = k / 2;
-            temp = temp * temp;
-                        printf("== 0 temp est egal : %d\n\n", temp);
+            resultat *= resultat;
+            printf("k est egal : %d\n", k);
+            printf("== 0 temp est egal : %d\n\n", resultat);
         }
 
-        if (k % 2 != 0)
+        else if (k % 2 != 0)
         {
             printf("k est egal : %d\n", k);
             
-            k = k - 1;
-            temp2 = temp;
-            temp = temp * x;
-            printf("!=0 temp est egal : %d\n\n", temp);
+            k /= 2;
+            temp = temp * resultat;
+            resultat *= resultat;
+            
+            printf("!=0 temp est egal : %d\n\n", resultat);
 
         }
     }
     
-    return printf("%d\n", temp);
+    return printf("%d\n", resultat*temp);
 }
