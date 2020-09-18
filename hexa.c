@@ -25,10 +25,13 @@ int hex_to_decimal()
 
     printf("Donnez moi un nombre en hexa : ");
     scanf("%c", &valeur_hexa);
-    while ((valeur_hexa >= '0' && valeur_hexa <= '9') || (valeur_hexa >= 'A' && valeur_hexa <= 'F'))
+    while ((valeur_hexa >= '0' && valeur_hexa <= '9') || (valeur_hexa >= 'A' && valeur_hexa <= 'F') || (valeur_hexa >= 'a' && valeur_hexa <= 'f'))
     {
         if (valeur_hexa >= 'A' && valeur_hexa <= 'F')
         result = (result * 16) + valeur_hexa - 'A' + 10;
+
+        else if (valeur_hexa >= 'a' && valeur_hexa <= 'f')
+        result = (result * 16) + valeur_hexa - 'a' + 10;
 
         else
         result = (result * 16) + valeur_hexa - '9' + 9;
