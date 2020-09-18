@@ -19,21 +19,21 @@ int main(int argc, char const *argv[])
 
 int hex_to_decimal()
 {
-    char t45;
+    char valeur_hexa;
     int result;
     result = 0;
 
     printf("Donnez moi un nombre en hexa : ");
-    scanf("%c", &t45);
-    while ((t45 >= '0' && t45 <= '9') || (t45 >= 'A' && t45 <= 'F'))
+    scanf("%c", &valeur_hexa);
+    while ((valeur_hexa >= '0' && valeur_hexa <= '9') || (valeur_hexa >= 'A' && valeur_hexa <= 'F'))
     {
-        if (t45 >= 'A' && t45 <= 'F')
-        result = (result * 16) + t45 - 'A' + 10;
+        if (valeur_hexa >= 'A' && valeur_hexa <= 'F')
+        result = (result * 16) + valeur_hexa - 'A' + 10;
 
         else
-        result = (result * 16) + t45 - '9' + 9;
+        result = (result * 16) + valeur_hexa - '9' + 9;
 
-        scanf("%c",&t45);
+        scanf("%c",&valeur_hexa);
     }
 
     return printf("Le nombre en base 10 est %d\n", result);
