@@ -11,7 +11,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define Precision 10000 // On utilise cette macro pour changer le nombre de test de points dans le cercle
+#define Precision 100000 // On utilise cette macro pour changer le nombre de test de points dans le cercle
 
 int incircle();
 
